@@ -13,7 +13,7 @@ const WidgetLayout = (props) => {
   }
   const showCloseButton =
     props.showCloseButton !== undefined ? props.showCloseButton : !props.embedded;
-  const isVisible = props.isChatVisible && !(props.hideWhenNotConnected && !props.connected);
+  const isVisible = props.isChatVisible && !(props.hideWhenNotConnected);
   const chatShowing = props.isChatOpen || props.embedded;
 
   if (chatShowing && !props.embedded) {
@@ -57,7 +57,11 @@ const WidgetLayout = (props) => {
         />
       )}
     </div>
-  ) : null;
+  ) : (
+    <div>
+      Cannot load
+    </div>
+  );
 };
 
 const mapStateToProps = state => ({

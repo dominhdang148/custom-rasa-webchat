@@ -328,9 +328,9 @@ class Widget extends Component {
 
             const ElemIsInViewPort = (
               rectangle.top >= 0 &&
-                rectangle.left >= 0 &&
-                rectangle.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rectangle.right <= (window.innerWidth || document.documentElement.clientWidth)
+              rectangle.left >= 0 &&
+              rectangle.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rectangle.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
             if (!ElemIsInViewPort) {
               elements[0].scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'smooth' });

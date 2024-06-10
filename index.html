@@ -22,11 +22,11 @@
 
 <body>
   <script>!(function () {
-      s
+
       let e = document.createElement("script"),
         t = document.head || document.getElementsByTagName("head")[0];
       (e.src =
-        "https://cdn.jsdelivr.net/gh/dominhdang148/custom-rasa-webchat@2.0.0/lib/index.js"),
+        "https://cdn.jsdelivr.net/gh/dominhdang148/custom-rasa-webchat@2.0.3/lib/index.js"),
         // Replace 1.x.x with the version that you want
         (e.async = !0),
         (e.onload = () => {
@@ -47,10 +47,8 @@
               toolTips: "Hãy chat với chúng tôi",
               onWidgetEvent: {
                 onChatOpen: function (widgetEvent) {
-
                   console.log('connection onChatOpen');
                 }, onChatHide: function (widgetEvent) {
-
                   hideWhenNotConnected: false;
                   console.log('connection onChatOpen');
                 }

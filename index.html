@@ -26,7 +26,7 @@
       let e = document.createElement("script"),
         t = document.head || document.getElementsByTagName("head")[0];
       (e.src =
-        "https://cdn.jsdelivr.net/gh/dominhdang148/custom-rasa-webchat@2.0.3/lib/index.js"),
+        "https://cdn.jsdelivr.net/gh/dominhdang148/custom-rasa-webchat@2.0.4/lib/index.js"),
         // Replace 1.x.x with the version that you want
         (e.async = !0),
         (e.onload = () => {
@@ -34,7 +34,7 @@
           window.WebChat.default(
             {
               hideWhenNotConnected: false,
-              connectOn: "mount",
+              connectOn: "open",
               initPayload: "/greet",
               socketUrl: "https://chatbot.dlu.edu.vn:444",
               embedded: "true",

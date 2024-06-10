@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.4](https://https///compare/v2.0.3...v2.0.4) (2024-06-10)
+
+
+### Bug Fixes
+
+* remove connected flag ([cea01ae](https://https///commit/cea01ae25ce30082be3b6a0b8b5d16d9d8c84e49))
+
 ### [2.0.3](https://https///compare/v2.0.2...v2.0.3) (2024-06-10)
 
 ### [2.0.2](https://https///compare/v2.0.1...v2.0.2) (2024-06-10)

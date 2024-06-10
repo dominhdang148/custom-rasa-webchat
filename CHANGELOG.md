@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.5](https://https///compare/v2.0.4...v2.0.5) (2024-06-10)
+
+
+### Bug Fixes
+
+* remove display none ([4065117](https://https///commit/4065117f2c91995ba0c91c3d54f0aeefd2824bdf))
+
 ### [2.0.4](https://https///compare/v2.0.3...v2.0.4) (2024-06-10)
 
 

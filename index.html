@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <title>Xin chao</title>
+  <style type="text/css">
+    .rw-chat-open>.rw-conversation-container>.rw-header-and-loading>.rw-header {
+      background-color: #54880A;
+    }
+
+    .rw-chat-open>.rw-conversation-container .rw-message .rw-reply {
+      background-color: #54880B;
+      border: 1px solid #54880B;
+    }
+
+    @media only screen and (min-width: 768px) {
+      #rasaWebchatPro div.rw-widget-container {
+        margin-right: 80px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script>!(function () {
+      s
+      let e = document.createElement("script"),
+        t = document.head || document.getElementsByTagName("head")[0];
+      (e.src =
+        "https://cdn.jsdelivr.net/gh/dominhdang148/custom-rasa-webchat@2.0.0/lib/index.js"),
+        // Replace 1.x.x with the version that you want
+        (e.async = !0),
+        (e.onload = () => {
+          localStorage.removeItem("chat_session");
+          window.WebChat.default(
+            {
+              hideWhenNotConnected: false,
+              connectOn: "mount",
+              initPayload: "/greet",
+              socketUrl: "https://chatbot.dlu.edu.vn:444",
+              embedded: "true",
+              customData: { language: "vi" },
+              title: "Trường Đại học Đà Lạt",
+              profileAvatar: 'logodl.png',
+              showFullScreenButton: true,
+              showMessageDate: true,
+              inputTextFieldHint: "Vui lòng gõ Hi/Hello để bắt đầu lại khi tôi không phản hồi",
+              toolTips: "Hãy chat với chúng tôi",
+              onWidgetEvent: {
+                onChatOpen: function (widgetEvent) {
+
+                  console.log('connection onChatOpen');
+                }, onChatHide: function (widgetEvent) {
+
+                  hideWhenNotConnected: false;
+                  console.log('connection onChatOpen');
+                }
+              }
+            },
+            null
+          );
+        }),
+        t.insertBefore(e, t.firstChild);
+    })();
+  </script>
+</body>
+
+</html>

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.6](https://https///compare/v2.0.5...v2.0.6) (2024-06-12)
+
+
+### Bug Fixes
+
+* delete style ([eb57171](https://https///commit/eb571715b194bab7e4e789354f067eaa5f9900ea))
+
 ### [2.0.5](https://https///compare/v2.0.4...v2.0.5) (2024-06-10)
 
 
